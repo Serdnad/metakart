@@ -1,6 +1,5 @@
 <script>
-	import Footer from '$lib/components/layout/Footer.svelte'
-	import Header from '$lib/components/layout/Header.svelte'
+	import Bookend from '$lib/components/layout/Bookend.svelte'
 </script>
 
 <!-- Google Fonts -->
@@ -13,13 +12,17 @@
 	/>
 </svelte:head>
 
-<Footer />
+<header>
+	<Bookend />
+</header>1
 
 <main>
 	<slot />
 </main>
 
-<Footer />
+<footer>
+	<Bookend />
+</footer>
 
 <style lang="scss">
 	:global(*) {

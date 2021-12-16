@@ -1,4 +1,5 @@
 <script>
+	import ScrollButton from '../ScrollButton.svelte'
 	import Racer from './Racer.svelte'
 </script>
 
@@ -8,10 +9,12 @@
 	{/each}
 </div>
 
+<ScrollButton />
+
 <style lang="scss">
 	.track {
 		background: #050505;
-		height: 80vh;
+		height: calc(100vh - 128px);
 
 		padding-top: 64px;
 	}

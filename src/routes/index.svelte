@@ -1,5 +1,6 @@
 <script>
 	import Spacer from '$lib/components/common/Spacer.svelte'
+	import DashedStripe from '$lib/components/decorative/DashedStripe.svelte'
 	import SpeedStripes from '$lib/components/decorative/SpeedStripes.svelte'
 	import Content from '$lib/components/layout/Content.svelte'
 	import RacerGrid from '$lib/components/RacerGrid.svelte'
@@ -8,7 +9,7 @@
 
 <RaceTrack />
 
-<div class="outer">
+<div id="main" class="outer">
 	<div class="section-racers">
 		<Content>
 			<h1>MEET THE RACERS</h1>
@@ -29,16 +30,12 @@
 				<li>tickets to races</li>
 				<li>mobile + metaverse game</li>
 			</ul>
+
+			<h1>[TIMELINE GRAPHIC]</h1>
 		</Content>
 	</div>
 
-	<div class="section-timeline">
-		<Content>
-			<h1>TIMELINE</h1>
-
-			<p>Graphic goes here</p>
-		</Content>
-	</div>
+	<DashedStripe />
 
 	<div class="section-team">
 		<Content>
@@ -50,15 +47,13 @@
 					<p>Zaid | Lead</p>
 				</div>
 
-				<Spacer width="64px" />
-
 				<div class="teammate">
 					<img src="/sample.gif" />
 					<p>Andres | Tech</p>
 				</div>
 			</div>
 
-			<Spacer height="32px" />
+			<Spacer height="16px" />
 
 			<div class="team-grid-bottom">
 				<div class="teammate">
@@ -66,14 +61,10 @@
 					<p>Ben | Art</p>
 				</div>
 
-				<Spacer width="64px" />
-
 				<div class="teammate">
 					<img src="/sample.gif" />
 					<p>Ben | Art</p>
 				</div>
-
-				<Spacer width="64px" />
 
 				<div class="teammate">
 					<img src="/sample.gif" />
@@ -87,6 +78,16 @@
 <div class="section-investors">
 	<Content>
 		<h1>Investors</h1>
+
+		<Spacer height="32px" />
+
+		<div class="row">
+			<img src="/twitter.png" />
+			<img src="/discord.png" />
+			<img src="/twitter.png" />
+		</div>
+
+		<Spacer height="32px" />
 	</Content>
 </div>
 
@@ -119,28 +120,27 @@
 			// grid-template-columns: repeat(3, 1fr);
 
 			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+			gap: 16px;
 		}
 
 		.team-grid-top {
 			display: flex;
-			justify-content: space-around;
-			// display: grid;
-			// width: 67%;
-			// margin: auto;
-			// grid-template-rows: repeat(1, 1fr);
-			// grid-template-columns: repeat(2, 1fr);
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+			gap: 16px;
 		}
 
 		.teammate {
 			img {
-				width: 100%;
-				// height: calc(100% - 32px);
-				// margin: 16px;
+				min-width: 160px;
+				max-width: min(20vw, 256px);
 
 				border: 6px solid white;
 				border-radius: 50%;
 
-				box-shadow: 0px 1px 6px 2px #00000088;
+				box-shadow: 0px 1px 6px 2px #00000044;
 			}
 
 			p {
@@ -154,5 +154,17 @@
 
 	.section-investors {
 		background: #111111;
+
+		.row {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-evenly;
+			gap: 32px;
+		}
+
+		img {
+			height: 112px;
+			min-width: 120px;
+		}
 	}
 </style>
