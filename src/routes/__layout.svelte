@@ -14,7 +14,7 @@
 
 <header>
 	<Bookend />
-</header>1
+</header>
 
 <main>
 	<slot />

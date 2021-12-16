@@ -24,6 +24,8 @@
 		<Content>
 			<h1>WHAT IS METAKART</h1>
 
+			<Spacer height="32px" />
+
 			<p>think of an aesthetically pleasing way to describe features</p>
 			<ul>
 				<li>10,000 NFTs</li>
@@ -31,7 +33,13 @@
 				<li>mobile + metaverse game</li>
 			</ul>
 
-			<h1>[TIMELINE GRAPHIC]</h1>
+			<Spacer height="64px" />
+
+			<div>
+				<img src="/timeline.png" alt="timeline" />
+			</div>
+
+			<Spacer height="32px" />
 		</Content>
 	</div>
 
@@ -109,6 +117,13 @@
 
 	.section-racers {
 		// background: linear-gradient(221.85deg, #028d3a 31.76%, #108cd1 100%);
+	}
+
+	.section-what {
+		div {
+			display: flex;
+			justify-content: center;
+		}
 	}
 
 	.section-team {

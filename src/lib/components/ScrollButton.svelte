@@ -23,7 +23,7 @@
 
 		position: relative;
 		margin: auto;
-		top: -96px;
+		top: -128px;
 		margin-bottom: -64px;
 
 		height: 48px;

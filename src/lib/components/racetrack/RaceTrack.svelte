@@ -1,10 +1,13 @@
-<script>
+<script lang="ts">
+	import { onMount } from 'svelte'
 	import ScrollButton from '../ScrollButton.svelte'
 	import Racer from './Racer.svelte'
+
+	let numRacers = 8
 </script>
 
 <div class="track">
-	{#each [1, 2, 3, 4, 5, 6, 7] as _}
+	{#each Array(numRacers) as _}
 		<Racer />
 	{/each}
 </div>
@@ -13,8 +16,9 @@
 
 <style lang="scss">
 	.track {
-		background: #050505;
-		height: calc(100vh - 128px);
+		// background: #050505;
+		background-image: url('/asphalt.jpg');
+		height: calc(100vh - 64px - 64px);
 
 		padding-top: 64px;
 	}
