@@ -2,8 +2,10 @@
 	import Bookend from '$lib/components/layout/Bookend.svelte'
 </script>
 
-<!-- Google Fonts -->
 <svelte:head>
+	<title>MetaKart</title>
+	<meta name="description" content="Kart through the Metaverse" />
+
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
