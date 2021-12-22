@@ -34,7 +34,7 @@
 		border-radius: 24px;
 		padding: 16px;
 
-		max-height: 52px;
+		max-height: 56px;
 		overflow: hidden;
 
 		&.expanded {
@@ -63,6 +63,26 @@
 
 			&.expanded {
 				transform: rotateZ(180deg);
+			}
+		}
+	}
+
+	p {
+		visibility: hidden;
+
+		&.expanded {
+			visibility: visible;
+		}
+	}
+
+	@media screen and (max-width: 540px) {
+		h1 {
+			font-size: medium;
+		}
+
+		.header {
+			img {
+				height: 24px;
 			}
 		}
 	}

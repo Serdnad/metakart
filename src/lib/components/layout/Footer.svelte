@@ -2,17 +2,10 @@
 	import { onMount } from 'svelte'
 	import Spacer from '../common/Spacer.svelte'
 
-	let useLogo = false
+	let mobile = false
 
 	onMount(() => {
-		let mq = window.matchMedia('(max-width: 720px)')
-		if (mq.matches) {
-			console.log('TINY!')
-			useLogo = true
-			// window width is at less than 570px
-		} else {
-			// window width is greater than 570px
-		}
+		mobile = window.matchMedia('(max-width: 720px)').matches
 	})
 </script>
 
@@ -22,12 +15,16 @@
 			<img class="logo" src="logo.png" alt="logo" />
 			<Spacer width="8px" />
 
-			<h1>METAKART</h1>
+			{#if mobile}
+				<h1>MK</h1>
+			{:else}
+				<h1>METAKART</h1>
+			{/if}
 		</div>
 
 		<div>
 			<a href="https://discord.gg/mAYev7JF" target="blank">
-				{#if useLogo}
+				{#if mobile}
 					<img src="/discord.png" />
 				{:else}
 					<h1>JOIN DISCORD</h1>

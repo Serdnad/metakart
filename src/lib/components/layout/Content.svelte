@@ -8,4 +8,10 @@
 		margin: auto;
 		padding: 40px;
 	}
+
+	@media screen and (max-width: 540px) {
+		div {
+			padding: 20px;
+		}
+	}
 </style>

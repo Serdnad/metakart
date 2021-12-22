@@ -23,5 +23,7 @@
 		height: 100%;
 		width: 100%;
 		border-radius: 32px;
+
+		box-shadow: 0 0 3px 1px #33333388;
 	}
 </style>
