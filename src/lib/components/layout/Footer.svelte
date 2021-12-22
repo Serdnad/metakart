@@ -1,5 +1,19 @@
 <script>
+	import { onMount } from 'svelte'
 	import Spacer from '../common/Spacer.svelte'
+
+	let useLogo = false
+
+	onMount(() => {
+		let mq = window.matchMedia('(max-width: 720px)')
+		if (mq.matches) {
+			console.log('TINY!')
+			useLogo = true
+			// window width is at less than 570px
+		} else {
+			// window width is greater than 570px
+		}
+	})
 </script>
 
 <header>
@@ -13,7 +27,11 @@
 
 		<div>
 			<a href="https://discord.gg/mAYev7JF" target="blank">
-				<h1>JOIN DISCORD</h1>
+				{#if useLogo}
+					<img src="/discord.png" />
+				{:else}
+					<h1>JOIN DISCORD</h1>
+				{/if}
 			</a>
 			<Spacer width="24px" />
 			<a href="https://twitter.com/metakartnft" target="blank">

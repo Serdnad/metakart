@@ -4,8 +4,6 @@
 
 <Content>
 	<div class="grid">
-		<!-- <div class="nft" /> -->
-
 		<img class="nft" src="nft1.jpg" />
 		<img class="nft" src="nft2.jpg" />
 		<img class="nft" src="nft3.jpg" />
@@ -17,7 +15,7 @@
 	.grid {
 		display: grid;
 		grid-template-rows: repeat(auto-fill, minmax(256px, 1fr));
-		grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
 		gap: 32px;
 	}
 

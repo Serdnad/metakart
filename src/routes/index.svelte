@@ -61,6 +61,10 @@
 
 		display: flex;
 		justify-content: center;
+
+		img {
+			max-width: 100%;
+		}
 	}
 
 	.section-what {
