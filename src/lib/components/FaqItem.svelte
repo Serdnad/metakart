@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { onMount } from 'svelte'
+
 	export let prompt: string
 	export let description: string
 
@@ -14,7 +16,12 @@
 <div class="container {expanded ? 'expanded' : ''}  {invertColors ? 'inverted' : ''}">
 	<div class="header" on:click={toggle}>
 		<h1>{prompt}</h1>
-		<img class={expanded ? 'expanded' : ''} src="down.png" />
+
+		{#if invertColors}
+			<img class={expanded ? 'expanded' : ''} src="down_blue.png" />
+		{:else}
+			<img class={expanded ? 'expanded' : ''} src="down.png" />
+		{/if}
 	</div>
 
 	<p class={expanded ? 'expanded' : ''}>{description}</p>
