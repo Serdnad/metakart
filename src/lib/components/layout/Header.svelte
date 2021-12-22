@@ -44,6 +44,7 @@
 
 <style lang="scss">
 	header {
+		z-index: 1000;
 		position: sticky;
 		top: 0;
 

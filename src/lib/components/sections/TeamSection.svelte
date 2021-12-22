@@ -59,6 +59,8 @@
 	}
 
 	.teammate {
+		position: relative;
+
 		img {
 			width: 100%;
 			height: 100%;
@@ -71,10 +73,9 @@
 			font-weight: 600;
 			margin: 8px 0 0 0;
 
-			position: relative;
-			top: -32px;
+			position: absolute;
+			bottom: 32px;
 			left: 32px;
-			margin-top: -32px;
 
 			max-width: calc(100% - 64px);
 		}
