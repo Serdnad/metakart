@@ -26,7 +26,7 @@
 
 			<div class="teammate">
 				<img src="/placeholder.png" />
-				<p>HASAN ABDU-HADI</p>
+				<p>HASAN ABDUL-HADI</p>
 			</div>
 
 			<div class="teammate">
