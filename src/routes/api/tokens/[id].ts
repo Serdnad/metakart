@@ -5,8 +5,9 @@ export async function get({ params }) {
     return {
         body: {
             id: id,
-            name: "cool",
-            description: "whatever",
+            name: "MetaKart Token",
+            description: "This a MetaKart token!\n\nSpecific tokens will be revealed shortly!",
+            image: "https://www.themetakart.com/nft1.jpg",
             attributes: {
                 speed: 5,
             }
