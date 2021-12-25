@@ -23,7 +23,7 @@
 		</div>
 
 		<div>
-			<a href="https://discord.gg/mAYev7JF" target="blank">
+			<a href="https://discord.gg/8CjWVh5xpD" target="blank">
 				{#if mobile}
 					<img src="/discord_black.png" />
 				{:else}

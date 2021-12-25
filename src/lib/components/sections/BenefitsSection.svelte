@@ -47,6 +47,14 @@ to date."
 			prompt="Mystery airdrops"
 			description="50 lucky MetaKart NFT holders will be airdropped a mystery NFT every month. Stay tuned."
 		/>
+
+		<Spacer height="32px" />
+
+		<FaqItem
+			invertColors={true}
+			prompt="Staking"
+			description="Holders of the special and legendary MetaKart NFTs will be able to stake their NFT to earn (chosen, ETH or MetaKart or etc) tokens. Staking will only be valid until the game launches."
+		/>
 	</Content>
 </div>
 

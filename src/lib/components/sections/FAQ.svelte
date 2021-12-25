@@ -12,7 +12,7 @@
 
 		<FaqItem
 			prompt="How much is a MetaKart NFT?"
-			description="Each MetaKart NFT will be 0.5 ETH for the pre-sale and 0.7 ETH for the public sale."
+			description="Each MetaKart NFT will be 0.05 ETH for the pre-sale and 0.07 ETH for the public sale."
 		/>
 
 		<Spacer height="32px" />
