@@ -34,7 +34,7 @@
 		<RoadmapEntry
 			title="50% - LAP 1!"
 			description="Raffle for first batch and second batch of tickets to racing events (in March and April). 100 NFT
-owners will be chosen. Also, a mystery airdrop to 50 lucky owners."
+owners will be chosen. Also, a mystery airdrop to 50 lucky owners. Also, every token holder starts recieving 1,000 MKART tokens on the first of every month."
 		/>
 
 		<RoadmapEntry

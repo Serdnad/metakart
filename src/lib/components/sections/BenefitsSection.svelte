@@ -25,6 +25,14 @@ utilities and more. Also, tokens can be traded for real money."
 
 		<FaqItem
 			invertColors={true}
+			prompt="Earn MKART tokens"
+			description="Holders of any NFT will earn MKART tokens, distributed on the first of every month, which can be used in-game for joining exclusive races, customizing your racer, and more!"
+		/>
+
+		<Spacer height="32px" />
+
+		<FaqItem
+			invertColors={true}
 			prompt="Tickets to racing events"
 			description="A raffle will be held every month to give 100 lucky MetaKart NFT owners tickets to F1 and other racing
 events. Join our discord and follow our Instagram and Twitter to stay up to date."
@@ -47,16 +55,11 @@ to date."
 			prompt="Mystery airdrops"
 			description="50 lucky MetaKart NFT holders will be airdropped a mystery NFT every month. Stay tuned."
 		/>
-
-		<Spacer height="32px" />
-
-		<FaqItem
-			invertColors={true}
-			prompt="Staking"
-			description="Holders of the special and legendary MetaKart NFTs will be able to stake their NFT to earn (chosen, ETH or MetaKart or etc) tokens. Staking will only be valid until the game launches."
-		/>
 	</Content>
 </div>
 
 <style lang="scss">
+	.container {
+		margin-top: -32px;
+	}
 </style>

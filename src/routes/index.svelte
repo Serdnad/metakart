@@ -26,9 +26,9 @@
 
 	<!-- <SpeedStripes /> -->
 
-	<RoadmapSection />
-
 	<BenefitsSection />
+
+	<RoadmapSection />
 
 	<Spacer height="32px" />
 

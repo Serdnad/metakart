@@ -56,16 +56,18 @@
 	<p>
 		The first drop is the most celebrated and holders will be rewarded with the special and
 		legendary NFTs (which have superior attributes such as speed and acceleration over the other two
-		drops). Special MetaKart NFTs (racers and karts) have +100% speed and +150% acceleration over
+		drops). Special MetaKart NFTs (racers and karts) have +7.5% speed and +10% acceleration over
 		Elite MetaKart NFTs
 	</p>
 
 	<p>
-		Legendary MetaKart NFTs have +50% speed and +100% acceleration over Elite MetaKart NFTs. Buy the
+		Legendary MetaKart NFTs have +5% speed and +7.5% acceleration over Elite MetaKart NFTs. Buy the
 		first drop to get a hold of one of the special or legendary NFTs. So owning both a special or
 		legendary kart and a special or legendary racer will give double the increase in speed and
 		acceleration. More information coming soon.
 	</p>
+
+	<Spacer height="32px" />
 
 	<SectionTitle title="METAKART GAME" />
 
@@ -102,8 +104,8 @@
 	}
 
 	p {
-		font-size: large;
-		line-height: 1.8;
+		font-size: larger;
+		line-height: 1.5;
 	}
 
 	img {
