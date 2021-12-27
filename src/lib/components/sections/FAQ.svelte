@@ -44,5 +44,8 @@ that MetaKart continues growing."
 <style lang="scss">
 	.container {
 		background: white;
+
+		margin-top: -32px;
+		margin-bottom: 32px;
 	}
 </style>
